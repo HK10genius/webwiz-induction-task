@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1">
+    
+  <script>
+    var colors = ["red", "blue", "green"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+</script>
+</head>
+<body id='body'></body>  <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <title>HK WEBSITE</title>
+</div>
+<h1>WEBWIZ INDUCTION TASK </h1>
+<h3>This task is done by HARIKUMAR N.</p>
+    <BUTTON>SIGN UP</BUTTON>
+<BUTTon> LOGIN IN</BUTTon>
+<H1>WELCOME BUTTON</H1>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+  let text;
+  let person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "WELCOME " + person ;
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+<H3>CLICK ON THE BELOW BUTTON TO CHANGE THE BACKGROUND COLOR OF THIS WEBPAGE</H3>
+<button onclick="changeColor();">Change BG</button>
+<p>Current Date and Time is <span id='date-time'></span>.</p><script>
+  var dt = new Date();
+  document.getElementById('date-time').innerHTML=dt;
+  </script>
+<FOOTER><p>Copyright © 2022 HK Website</p></FOOTER>
+  </body>
+</html>
